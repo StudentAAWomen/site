@@ -1,0 +1,20 @@
+<div ng-controller="ResourcesController">
+<h1 class="main-heading">{{resource.heading}}</h1>
+<p>{{resource.paragraph}}</p>
+
+<div class="w-row">
+
+  <div class="w-col w-col-4 resources-block" ng-repeat="block in resource.blocks">
+    <div class="resources-wrapper">
+      <div class="resources-div" >
+        <a class="w-inline-block" href="{{block.link}}" target="_blank">
+          <img class="resources-image" ng-src="{{block.image}}"/>
+        </a>
+        <h1>{{block.title}}</h1>
+        <div class="text">{{block.description}}</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
